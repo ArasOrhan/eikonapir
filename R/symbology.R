@@ -58,7 +58,7 @@ get_symbology <- function(symbol, from_symbol_type='RIC', to_symbol_type=NULL, r
 
   payload <- list('symbols'=symbol,'from'=from_symbol_type,'to'=to_symbol_type,'bestMatchOnly'=TRUE)
   json_data = send_json_request(Symbology_endpoint,payload,debug)
-  if (raw_ouput == TRUE)
+  if (raw_output == TRUE)
   {
     return (json_data)
   }
